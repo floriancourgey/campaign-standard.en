@@ -351,14 +351,20 @@ content-type: reference
                   <td>enumeration (byte) </td>
                   <td>
                      <ul>
-                        <li>Fax - fax - 4</li>
-                        <li>Mobile (SMS) - sms - 1</li>
-                        <li>Email - email - 0</li>
-                        <li>Phone - phone - 2</li>
-                        <li>Direct mail - paper - 3</li>
-                        <li>Mobile application - pushNotification - 40</li>
-                        <li>Other - other - 120</li>
-                        <li>INVALID VALUE - __Invalid_value__ - __Invalid_value__</li>
+                       <li>Email - email - 0</li>
+                       <li>Mobile (SMS) - sms - 1</li>
+                       <li>Phone - phone - 2</li>
+                       <li>Direct mail - paper - 3</li>
+                       <li>Fax - fax - 4</li>
+                       <li>Agency - agency - 5 (if HasPackage('nms:centralLocal'))</li>
+                       <li>Facebook - facebook - 20 (if HasPackage('nms:social'))</li>
+                       <li>Twitter - twitter - 25 (if HasPackage('nms:social'))</li>
+                       <li>Mobile application - pushNotification - 40</li>
+                       <li>iOS Channel - ios - 41 (if HasPackage('nms:mobileApp'))</li>
+                       <li>Android Channel - android - 42 (if HasPackage('nms:mobileApp'))</li>
+                       <li>LINE - line - 61 (if HasPackage('nms:line'OR 'nms:lineV2'))</li>
+                       <li>Other - other - 120</li>
+                       <li>Undefined - undefined - 255</li>
                      </ul>
                   </td>
                </tr>
